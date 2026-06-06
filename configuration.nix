@@ -69,6 +69,9 @@
 
   programs.firefox.enable = true;
 
+  # DMS
+  programs.dms-shell.enable = true;
+
   programs.hyprland = {
     enable = true;
     withUWSM = true;
