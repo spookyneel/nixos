@@ -96,6 +96,7 @@
    enable = true;
    defaultEditor = true;
   };
+  
  
   services.displayManager.sddm = {
     enable = true;
@@ -109,6 +110,7 @@
     wezterm
     git
     kitty
+    gh
   ];
 
   fonts.fontconfig = {
