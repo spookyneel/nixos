@@ -84,6 +84,7 @@
     vim     
     wget
     wezterm
+    git
   ];
 
   services.openssh.enable = true;
