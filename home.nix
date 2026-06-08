@@ -10,6 +10,7 @@
     shellAliases = {
       btw = "echo I use NixOS";
       nrs = "sudo nixos-rebuild switch -I nixos-config=/home/neel/nixos/configuration.nix";
+      cd = "z";
     };
 
     initExtra = ''
@@ -17,8 +18,16 @@
     '';
   };
 
+  programs.zoxide = {
+    enable = true;
+    enableBashIntegration = true;
+  };
+
   home.packages = with pkgs; [
     bat
+    fzf
+    gcc
+    superfile
   ];
 }
 
